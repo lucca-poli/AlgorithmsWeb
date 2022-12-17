@@ -1,0 +1,77 @@
+:root {
+  --neutral-color: #f1f1f1;
+  --primary-color: #0e3584;
+  --lighter-color: #5359b3;
+  --darker-color: #221956;
+  --primaryj-color: #ff0000;
+  --bigger--font-size: 32px;
+  --big--font-size: 24px;
+  --medium--font-size: 20px;
+  --small--font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--neutral-color);
+  text-decoration: none;
+}
+
+div {
+  color: var(--neutral-color);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, Helvetica,
+    sans-serif;
+  background: var(--primary-color);
+  height: 8vh;
+  font-size: 24px;
+}
+
+header > *:hover {
+  opacity: 0.7;
+  cursor: default;
+}
+
+li {
+  display: block;
+}
+
+.datastructures-menu nav,
+.algorithms-menu nav {
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--medium--font-size);
+  background: var(--darker-color);
+  display: flex;
+  position: absolute;
+  width: 24vw;
+  top: 8vh;
+  display: none;
+  transform: translateY(-100%);
+}
+
+.datastructures-menu.active {
+  display: flex;
+  transform: translateY(0);
+}
+
+.algorithms-menu.active {
+  display: flex;
+  transform: translateY(0);
+}
+
+nav li {
+  margin-left: 8px;
+}
