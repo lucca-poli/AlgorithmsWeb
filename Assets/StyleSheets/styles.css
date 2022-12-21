@@ -19,10 +19,6 @@ div {
   color: var(--neutral-color);
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
 header {
   display: flex;
   justify-content: space-around;
@@ -35,7 +31,6 @@ header {
 }
 
 header > *:hover {
-  opacity: 0.7;
   cursor: default;
 }
 
