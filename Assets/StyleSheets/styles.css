@@ -10,11 +10,6 @@
   --small--font-size: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   color: var(--neutral-color);
   text-decoration: none;
@@ -48,8 +43,8 @@ li {
   display: block;
 }
 
-.datastructures-menu nav,
-.algorithms-menu nav {
+.datastructures-menu,
+.algorithms-menu {
   flex-direction: column;
   justify-content: space-between;
   font-size: var(--medium--font-size);
@@ -62,14 +57,10 @@ li {
   transform: translateY(-100%);
 }
 
-.datastructures-menu.active {
-  display: flex;
-  transform: translateY(0);
-}
-
-.algorithms-menu.active {
-  display: flex;
-  transform: translateY(0);
+button {
+  background-color: var(--primary-color);
+  border: 0;
+  color: var(--neutral-color);
 }
 
 nav li {
