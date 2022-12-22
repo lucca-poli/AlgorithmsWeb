@@ -1,0 +1,35 @@
+:root {
+  --neutral-light-color: #f1f1f1;
+  --primary-color: #0e3584;
+  --lighter-color: #5359b3;
+  --darker-color: #221956;
+  --neutral-dark-color: #1f1f1f;
+  --bigger--font-size: 32px;
+  --big--font-size: 24px;
+  --medium--font-size: 20px;
+  --small--font-size: 10px;
+}
+
+#display {
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#interface {
+  position: absolute;
+  left: 30vw;
+  background-color: var(--darker-color);
+  bottom: 0;
+  height: 15vh;
+  width: 40vw;
+}
+
+i {
+  font-size: 1em;
+  color: black;
+  width: 1em;
+  height: 1em;
+  background-color: black;
+}

@@ -1,9 +1,9 @@
 :root {
-  --neutral-color: #f1f1f1;
+  --neutral-light-color: #f1f1f1;
   --primary-color: #0e3584;
   --lighter-color: #5359b3;
   --darker-color: #221956;
-  --primaryj-color: #ff0000;
+  --neutral-dark-color: #1f1f1f;
   --bigger--font-size: 32px;
   --big--font-size: 24px;
   --medium--font-size: 20px;
@@ -11,7 +11,7 @@
 }
 
 a {
-  color: var(--neutral-color);
+  color: var(--neutral-light-color);
   text-decoration: none;
 }
 
@@ -24,6 +24,10 @@ header {
   background: var(--primary-color);
   height: 8vh;
   font-size: 24px;
+}
+
+main {
+  height: 92vh;
 }
 
 li {
@@ -54,7 +58,7 @@ ul {
 button {
   background-color: var(--primary-color);
   border: 0;
-  color: var(--neutral-color);
+  color: var(--neutral-light-color);
 }
 
 li:hover {
