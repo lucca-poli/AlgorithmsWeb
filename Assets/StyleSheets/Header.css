@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-div {
-  color: var(--neutral-color);
-}
-
 header {
   display: flex;
   justify-content: space-around;
@@ -30,24 +26,27 @@ header {
   font-size: 24px;
 }
 
-header > *:hover {
-  cursor: default;
-}
-
 li {
   display: block;
 }
 
-.datastructures-menu,
-.algorithms-menu {
+ul {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#datastructures-menu,
+#algorithms-menu {
   font-size: var(--medium--font-size);
   background: var(--darker-color);
-  display: flex;
   position: absolute;
   width: 24vw;
   top: 8vh;
+  padding: 0;
   display: none;
   transform: translateY(-100%);
 }
@@ -58,6 +57,6 @@ button {
   color: var(--neutral-color);
 }
 
-nav li {
-  margin-left: 8px;
+li:hover {
+  opacity: 0.7;
 }
