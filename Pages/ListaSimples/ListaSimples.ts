@@ -103,6 +103,13 @@ class ListaLigada {
       this.startHTML.childNodes[1]
     );
   }
+
+  listSearch(k: number) {
+    let elementX = this.start;
+    while (k !== elementX?.elementValue && elementX?.nextElement !== null) {
+      elementX = elementX?.nextElement;
+    }
+  }
 }
 
 const listaPrincipal = new ListaLigada();
@@ -116,5 +123,5 @@ listaPrincipal.listInsert(thirdElement);
 
 const test = listaPrincipal.startHTML;
 
-const mainDisplay = document.querySelector("#display") as HTMLElement;
-mainDisplay.appendChild(test);
+const mainDisplay = document.querySelector("#display");
+mainDisplay?.appendChild(test);
